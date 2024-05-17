@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<hibernate-configuration>
+	<session-factory>
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/vivekfinal?useSSL=false</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">root</property>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="show_sql">true</property>
+	<!--  <mapping class="com.main.Students"/>
+	<mapping class="com.main.employee"/>
+	<mapping class="com.main.Certificate"/>
+	<mapping class="com.maps.Answer"/>
+	<mapping class="com.maps.Question"/> -->
+	<!-- <mapping class="com.Hcql.Students"/> -->
+	
+	<!-- <mapping class="Hello.Employee"/> -->
+	<mapping class="EntityDatabase.AdminRegister"/>
+	<mapping class="EntityDatabase.ApplyJob"/>
+	<mapping class="EntityDatabase.JobPost"/>
+	<mapping class="EntityDatabase.UserProfile"/>
+	<mapping class="EntityDatabase.SavedJob"/>
+	
+	</session-factory>
+	
+	
+	</hibernate-configuration>
