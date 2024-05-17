@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.first {
+	border: 2px solid #000;
+	margin-top: 10px;
+	text-decoration: none;
+	text-align: left;
+	background-color: rgb(207, 219, 231);
+	border-radius: 10px;
+	width: 180px;
+}
+
+.first:hover {
+	background-color: tomato;
+}
+
+a {
+	text-decoration: none;
+	font-size: 20px;
+	font-style: italic;
+	color: #000;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+}
+
+body {
+	background-color: rgb(138, 178, 215);
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	padding-top: 8px;
+	padding-bottom: 9px;
+	border-radius: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: rgb(207, 219, 231);
+	margin-top: 3px;
+}
+input
+{
+border-radius: 10px;
+width: 250px;
+margin-top: 3px;
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+	<form action="../ViewJob.jsp" method="post" target="search2">
+		<button class="Display">View All Job</button>
+	</form>
+	<form action="../ViewSearchedJob.jsp" method="post" target="search2">
+		<input type="text" placeholder="Enter Job Title" class="none" name="search">
+		<div class="first1">
+			<button class="Display1" style="margin-left: 15px;">Search
+				Job</button>
+		</div>
+	</form>
+</body>
+</html>

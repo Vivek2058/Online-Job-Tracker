@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Job ID</title>
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+body
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ width: 100%;
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+ 
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.job-form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.ApplicantButton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Job ID</h2>
+    <form action="../ViewApplicantAdmin.jsp" method="POST">
+      <label for="job_id">Job ID:</label>
+      <input type="text" id="job_id" name="jobIds" required>
+      <div class="ApplicantButton">
+        <button type="submit">Search Applicant</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
